@@ -7,8 +7,25 @@ body {
 .digit {
   display: inline-block;
   font-size: 80px;
+  background: pink;
 }
 
 .redDigit {
   color: red;
+}
+
+#secondTens{
+  background: yellow;
+}
+
+#secondOnes{
+  background: green;
+}
+
+#msHundreds{
+  background: purple;
+}
+
+#msTens {
+  background: blue;
 }

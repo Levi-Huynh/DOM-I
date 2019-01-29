@@ -50,6 +50,27 @@ NavItem1[5].textContent = "Contact";
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+NavItem1.forEach(function(currV) {
+    return currV.style.color = "green";
+});
+
+//appendChild of 'a' element in nav(parent node) 
+let nodeLast = document.createElement('a');
+nodeLast.href= '#';
+nodeLast.textContent= 'Promotions';
+let Nav = document.querySelector('nav');
+Nav.appendChild(nodeLast);
+console.log(Nav);
+nodeLast.style.color= 'green';
+
+//prepend of 'a' element in nav(parent node) 
+let nodeFirst = document.createElement('a');
+nodeFirst.href= '#';
+nodeFirst.textContent = 'Sponsors';
+Nav.prepend(nodeFirst);
+nodeFirst.style.color= 'green';
+
+
 //cta
 let ctaH1 = document.querySelector('h1');
 ctaH1.textContent = "DOM Is Awesome";
