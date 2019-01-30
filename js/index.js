@@ -78,6 +78,10 @@ let button = document.querySelector('button');
 button.textContent = siteContent["cta"]["button"];
 let headerImage = document.getElementById("cta-img");
 headerImage.src= siteContent["cta"]["img-src"];
+button.addEventListener('click', e=> {
+      alert('button clicked!')
+      e.currentTarget.style.backgroundColor='red';
+});
 
 //main content
 let elementH4 = document.querySelectorAll('h4');
